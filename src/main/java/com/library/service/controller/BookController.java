@@ -12,12 +12,11 @@ import java.util.Collection;
 import java.util.Map;
 
 @RestController
-//@RequestMapping("/")
+@RequestMapping("/")
 public class BookController {
+
     @Autowired
     BookService bookService;
-
-
 
     @GetMapping(value = "/book")
     public Book findByTitle(@RequestParam String title) {
